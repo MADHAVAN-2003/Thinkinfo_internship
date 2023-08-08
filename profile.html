@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Profile
+    </title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+    <div class="top">
+        <p><img src="./assets/login logo.png" alt="logo" height="17px" width="20px">&nbsp; PROFILE</p>
+        <button><a class="logout" href="login.html">logout</a></button>
+    </div>
+
+    <div class="center">
+        <table>
+            <table class="first" id="first">
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();sign(event);" autocomplete="off"
+                        method="post">
+                        <div>
+                            <label>FULL NAME</label><label class="validation-error hide"
+                                id="fullNameValidationError">This field is required.</label>
+                            <input type="text" name="fullName" id="fullName" placeholder="Fullname" required>
+                        </div>
+                        <div>
+                            <label>AGE</label>
+                            <input type="number" name="age" id="age" placeholder="Age" required>
+                        </div>
+                        <div>
+                            <label>DATE OF BIRTH</label>
+                            <input type="text" name="dob" id="dob" placeholder="DD-MM-YYYY" required>
+                        </div>
+                        <div>
+                            <label>CONTACT NUMBER</label>
+                            <input type="number" name="contact" id="contact" placeholder="Contact Nuber" required>
+                        </div>
+                        <div class="form-action-buttons">
+                            <!-- <a class="logout" href="login.html"><button>logout</button></a> -->
+                            <input type="submit" value="Submit">
+
+                        </div>
+                    </form>
+                </td><br>
+            </table><br><br>
+
+            <table class="second" id="second" style="display: none;">
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();sign(event);" autocomplete="off"
+                        method="post">
+                        <div class="d-flex">
+                            <label>FULL NAME: </label>
+                            <p id="p-fullName"></p>
+                        </div>
+                        <div class="d-flex">
+                            <label>AGE: </label>
+                            <p id="p-age"></p>
+                        </div>
+                        <div class="d-flex">
+                            <label>DATE OF BIRTH:</label>
+                            <p id="p-dob"></p>
+                        </div>
+                        <div class="d-flex">
+                            <label>CONTACT NUMBER: </label>
+                            <p id="p-contact"></p>
+                        </div>
+
+
+    </div>
+    </form>
+    </td><br>
+    </table>
+    <!-- <table class="second">
+                <td class="to">
+                    <table class="list" id="profile">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Age</th>
+                                <th>DOB</th>
+                                <th>Contact</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+                </tr>
+            </table> -->
+    </div>
+    <!-- <a class="logout" href="login.html"><button>logout</button></a> -->
+    <script src="js/profile.js"></script>
+    <script src="https://kit.fontawesome.com/102326e940.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
